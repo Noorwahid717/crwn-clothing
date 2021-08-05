@@ -18,6 +18,11 @@ const Header = () => (
                 Hubungi
             </Link>
         </div>
+        <div className='options'>
+            <Link className='option' to='/signin'>
+                Masuk
+            </Link>
+        </div>
     </div>
 )
 
