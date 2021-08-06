@@ -10,15 +10,16 @@ const config = {
     messagingSenderId: "776122256111",
     appId: "1:776122256111:web:20b9a068b6835aae2da91a",
     measurementId: "G-NNL0R4Q8GT"
-  } 
+  };
+  
+firebase.intializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
 
     const userRef = firestore.doc(`users/${userAuth.uid}`);
-    const snapShot = await userRef.get()
 
-    console.log(snapShot)
+    const snapShot = await userRef.get()
 
     if(!snapShot.exist) {
         const { displayName, email } = userAuth;
@@ -30,15 +31,15 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
                 createdAt,
                 ...additionalData
     
-            })
+            });
         } catch (error) {
             console.log('error creating user', error.message);
         }
     }
+    
     return userRef;
-}
+};
 
-firebase.initializeApp(config);
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
