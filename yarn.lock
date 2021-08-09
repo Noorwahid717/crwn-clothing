@@ -6757,6 +6757,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "crwn-clothing@workspace:."
   dependencies:
+    "@heroku/buildpack-registry": ^1.0.1
     "@stripe/react-stripe-js": ^1.4.1
     "@stripe/stripe-js": ^1.16.0
     "@testing-library/jest-dom": ^5.11.4
