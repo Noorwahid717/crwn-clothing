@@ -2554,6 +2554,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stripe/react-stripe-js@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "@stripe/react-stripe-js@npm:1.4.1"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@stripe/stripe-js": ^1.13.0
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: a3a6e820b419e7353894c40c4cde5e3a8227729c6c6058a38e58827cc2f61255baa029e8066fdd87235ef384a3d2a55c4d28200a384331566f9ab01afeb17053
+  languageName: node
+  linkType: hard
+
+"@stripe/stripe-js@npm:^1.16.0":
+  version: 1.16.0
+  resolution: "@stripe/stripe-js@npm:1.16.0"
+  checksum: ce2f35fcef8b063320d67988822ae363bf396ac8c201af0849cf796d7aa0ddfac19c512cb02f4ffa23db8fac146b9089d08e7daa66c527881a5b179f51f79fee
+  languageName: node
+  linkType: hard
+
 "@surma/rollup-plugin-off-main-thread@npm:^1.1.1":
   version: 1.4.2
   resolution: "@surma/rollup-plugin-off-main-thread@npm:1.4.2"
@@ -5627,6 +5647,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "crwn-clothing@workspace:."
   dependencies:
+    "@stripe/react-stripe-js": ^1.4.1
+    "@stripe/stripe-js": ^1.16.0
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
@@ -5637,11 +5659,13 @@ __metadata:
     global: ^4.4.0
     lodash.memoize: ^4.1.2
     node-sass: ^6.0.1
+    prop-types: ^15.5.8
     react: ^17.0.2
     react-dom: ^17.0.2
     react-redux: ^7.2.4
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
+    react-stripe-checkout: ^2.6.3
     redux: ^4.1.1
     redux-logger: ^3.0.6
     redux-persist: ^6.0.0
@@ -5649,6 +5673,8 @@ __metadata:
     sass: ^1.37.5
     serve: ^12.0.0
     web-vitals: ^1.0.1
+  peerDependencies:
+    react: ">=15"
   languageName: unknown
   linkType: soft
 
@@ -13081,7 +13107,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -13574,6 +13600,13 @@ fsevents@^1.2.7:
   bin:
     react-scripts: ./bin/react-scripts.js
   checksum: ee13d6fa1eef6c8ad0b5e4e5c26bdf59b136dfa24910e9ebb2d9f42a8fe7e77ed7ce221b87342e4f597954c42293d6d181ff1315d3b2bd3103362eb192a71d22
+  languageName: node
+  linkType: hard
+
+"react-stripe-checkout@npm:^2.6.3":
+  version: 2.6.3
+  resolution: "react-stripe-checkout@npm:2.6.3"
+  checksum: 4131fb1106de3f619a204263369e8bdf176c9f3c33a7bf284c3b43adb21cd29263ea0b16842e4a3903ad6583990d2e2e0a6fdf275fb3bb0a717619e6f68fe1b3
   languageName: node
   linkType: hard
 
